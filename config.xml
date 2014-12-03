@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.[bedrijfsnaam].[appnaam]" 
+        versionCode = "1"
+        version     = "0.0.1">
+        
+ 	<!-- PLaats hieronder de naam van de app -->
+    <name></name>
+ 	
+ 	<!-- PLaats hieronder een beschrijving van de app -->
+    <description> </description>
+ 	
+ 	<!-- PLaats hieronder de link naar je website, email en zet je naam tussen de tags -->
+    <author href="" email=""></author>
+    
+    <!-- Eerste pagina -->
+    <content src="index.html" />
+    
+    <!-- Link naar het icoontje -->
+    <icon src="icon.png" />
+    
+    <!-- Link naar het splash-screen -->
+    <gap:splash src="splash.png" />
+    
+    <!-- Plaats hieronder de achtergrondkleur van de app -->
+    <preference name="BackgroundColor" value="0xcccccc"/>
+ 
+    <!-- Linkjes naar api's -->
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+ 
+</widget>

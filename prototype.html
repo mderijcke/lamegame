@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Time left: <span id="countdown">60</span> -
+Score: <span id="score">0</span>
+
+<br><br>
+
+<button id="start">Start</button>
+
+<img id="target" src="http://i.stack.imgur.com/vfLae.png" style="display: none">
+
+<script src="js/jquery.js"></script>
+<script>
+var score;
+var time;
+
+$('#start').click(function() {
+	score = 0;
+	time = 0;
+
+	$('#start').css('display', 'none');
+	$('#target').css('display', 'block');
+
+	var timer = setInterval(function() {
+		time++;
+		$('#countdown').text(60 - time);
+
+		if (time >= 60) {
+			clearInterval(timer);
+		}
+	}, 1000);
+});
+
+$('#target').click(function() {
+	if (time < 60) {
+		score++;
+		$('#score').text(score);
+	}
+});
+</script>
+
+</body>
+</html>

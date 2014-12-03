@@ -29,6 +29,9 @@ $('#start').click(function() {
 
 		if (time >= 60) {
 			clearInterval(timer);
+
+			$('#start').css('display', 'block');
+			$('#target').css('display', 'none');
 		}
 	}, 1000);
 });

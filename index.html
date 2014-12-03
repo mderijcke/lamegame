@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
 	<title>Click It!</title>
+
 </head>
-	<body>
-		<section>
-			<content>
-			</content>
-			<footer>
-				<nav>
-					<ul>
-						<li>How to Play</li>
-						<li>Play</li>
-						<li>Highscore</li>
-					</ul>
-				</nav>
-				<div id="copyright">
-					&copy; IVS Terneuzen
-				</div>
-			</footer>
-		</section>	
-		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-	</body>
+<body>
+	<ul class="nav nav-tabs nav-justified">
+	  <li role="presentation"><a href="#howtoplay"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> How to play</a></li>
+	  <li role="presentation"><a href="#highscore"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Highscore</a></li>
+	  <li role="presentation"><a href="#game"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Play</a></li>
+	</ul>
+
+	<script>$('#myTab a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			})
+	</script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</body>
 </html>
 

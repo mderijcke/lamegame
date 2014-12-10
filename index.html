@@ -1,187 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-
 	<title>Click It!</title>
-
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-	<ul class="nav nav-tabs nav-justified" role="tablist" id"myTab">
-	  <li role="presentation"><a href="#howtoplay" aria-controls="howtoplay" role="tab" data-toggle="tab">
-	  	<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> How to play</a></li>
+<ul class="nav nav-tabs nav-justified" id="myTab">
+	<li>
+		<a href="#howtoplay" data-toggle="tab">
+			<em class="glyphicon glyphicon-question-sign"></em> How to play
+		</a>
+	</li>
 
-	  <li role="presentation"><a href="#game" aria-controls="game" role="tab" data-toggle="tab">
-	  	<span class="glyphicon glyphicon-play" aria-hidden="true"></span> Play</a></li>
+	<li>
+		<a href="#game" data-toggle="tab">
+			<em class="glyphicon glyphicon-play"></em> Play
+		</a>
+	</li>
 
-	  <li role="presentation"><a href="#highscore" aria-controls="highscore" role="tab" data-toggle="tab">
-	  	<span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Highscore</a></li>
+	<li>
+		<a href="#highscore" data-toggle="tab">
+			<em class="glyphicon glyphicon-signal"></em> Highscore
+		</a>
+	</li>
+</ul>
 
-	</ul>
-
-	<div class="tab-content">
-
+<div class="tab-content">
     	<div role="tabpanel" class="tab-pane fade in active" id="howtoplay">
-
-    		<div class="container-fluid">
-
+		<div class="container-fluid">
     			<div class="row">
+				<center>
+					<h2 id="tables-hover-rows">Lame game <small>Beat the 5H17 out of that button!</small></h2>
 
-    				<div class="col-md-4"></div>
-
-    				<div class="col-md-4">
-
-    					<center>
-    						<h2 id="tables-hover-rows">Lame game <small>Beat the 5H17 out of that button!</small></h2>
-
-    						<p>
-    							<br>
-    							<h3>What is the goal of this game?</h3>
-    							<br>
-    							Beat the button to shreads and build your way up to the number one spot in the highscore!
-    						</p>
-    					</center>
-
-    				</div>
-
-    				<div class="col-md-4"></div>
-
+					<p>
+						<br>
+						<h3>What is the goal of this game?</h3>
+						<br>
+						Beat the button to shreads and build your way up to the number one spot in the highscore!
+					</p>
+				</center>
     			</div>
-
     		</div>
-
     	</div>
 
-    	<div role="tabpanel" class="tab-pane fade" id="highscore">
-    		<table class="table table-striped">
-		      <thead>
-		        <tr>
-		          <th>#</th>
-		          <th>First Name</th>
-		          <th>Last Name</th>
-		          <th>Username</th>
-		        </tr>
-		      </thead>
-		      <tbody>
-		        <tr>
-		          <td><strong>1</strong></td>
-		          <td>Mark</td>
-		          <td>Otto</td>
-		          <td>@mdo</td>
-		        </tr>
-		        <tr>
-		          <td><strong>2</strong></td>
-		          <td>Jacob</td>
-		          <td>Thornton</td>
-		          <td>@fat</td>
-		        </tr>
-		        <tr>
-		          <td><strong>3</strong></td>
-		          <td>Larry</td>
-		          <td>the Bird</td>
-		          <td>@twitter</td>
-		        </tr>
-		        <tr>
-		          <td><strong>4</strong></td>
-		          <td>Harry</td>
-		          <td>the Bird</td>
-		          <td>@twitter</td>
-		        </tr>
-		        <tr>
-		          <td><strong>5</strong></td>
-		          <td>Hank</td>
-		          <td>the Bird</td>
-		          <td>@twitter</td>
-		        </tr>
-		        <tr>
-		          <td><strong>6</strong></td>
-		          <td>Tom</td>
-		          <td>the Bird</td>
-		          <td>@twitter</td>
-		        </tr>
-		        <tr>
-		          <td><strong>7</strong></td>
-		          <td>Larry</td>
-		          <td>the Bird</td>
-		          <td>@twitter</td>
-		        </tr>
-		      </tbody>
-		    </table>
+	<div role="tabpanel" class="tab-pane fade" id="highscore">
+		<table class="table table-striped">
+			<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+			</tr>
 
-		</div>
-   		<div role="tabpanel" class="tab-pane fade" id="game">
-   			<div class="container-fluid">
-   				<div class="row">
-   					<div class="col-md-4"></div>
-   					<div class="col-md-4">
-				   			Time left: <span id="countdown">60</span> -
-				Score: <span id="score">0</span>
+			<tr>
+				<td><strong>1</strong></td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
 
-				<br><br>
+			<tr>
+				<td><strong>2</strong></td>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
 
-				<button id="start">Start</button>
+			<tr>
+				<td><strong>3</strong></td>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+			</tr>
 
-				<img id="target" src="http://i.stack.imgur.com/vfLae.png" style="display: none" draggable="false">
+			<tr>
+				<td><strong>4</strong></td>
+				<td>Harry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+			</tr>
 
-				<script src="js/jquery.js"></script>
-				<script>
-				var score;
-				var time;
+			<tr>
+				<td><strong>5</strong></td>
+				<td>Hank</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+			</tr>
 
-				$('#start').click(function() {
-					score = 0;
-					time = 0;
+			<tr>
+				<td><strong>6</strong></td>
+				<td>Tom</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</table>
+	</div>
 
-					$('#start').css('display', 'none');
-					$('#target').css('display', 'block');
+	<div role="tabpanel" class="tab-pane fade" id="game">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					Time left: <span id="countdown">60</span> -
+					Score: <span id="score">0</span>
 
-					var timer = setInterval(function() {
-						time++;
-						$('#countdown').text(60 - time);
+					<br><br>
 
-						if (time >= 60) {
-							clearInterval(timer);
+					<button id="start">Start</button>
 
-							$('#start').css('display', 'block');
-							$('#target').css('display', 'none');
-						}
-					}, 1000);
-				});
-
-				$('#target').click(function() {
-					if (time < 60) {
-						score++;
-						$('#score').text(score);
-					}
-				});
-				</script>
-		
-					</div>
-					<div class="col-md-4"></div>
+					<img id="target" src="http://i.stack.imgur.com/vfLae.png" style="display: none" draggable="false">
 				</div>
+				<div class="col-md-4"></div>
 			</div>
 		</div>
-  	</div>
+	</div>
+</div>
 
-  	<script>
-  		$(function () {
-    		$('#myTab a:last').tab('show')
- 		 })
-	</script>
-
-	<script src="js/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script src="js/tabs.js"></script>
+<script src="js/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

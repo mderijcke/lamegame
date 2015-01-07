@@ -31,7 +31,6 @@ $('#target').click(function() {
 		var achievement = '#achievement1'
 
 		$(achievement).popover('show')
-
 		setTimeout(function() {
     	$(achievement).popover('hide')
 		}, 7 * 1000);
@@ -41,7 +40,6 @@ $('#target').click(function() {
 		var achievement = '#achievement2'
 
 		$(achievement).popover('show')
-
 		setTimeout(function() {
     	$(achievement).popover('hide')
 		}, 7 * 1000);
@@ -51,7 +49,6 @@ $('#target').click(function() {
 		var achievement = '#achievement3'
 
 		$(achievement).popover('show')
-
 		setTimeout(function() {
     	$(achievement).popover('hide')
 		}, 7 * 1000);
@@ -61,7 +58,6 @@ $('#target').click(function() {
 		var achievement = '#achievement4'
 
 		$(achievement).popover('show')
-
 		setTimeout(function() {
     	$(achievement).popover('hide')
 		}, 7 * 1000);
@@ -72,7 +68,6 @@ $('#target').click(function() {
 		score = score = 0
 
 		$(achievement).popover('show')
-
 		setTimeout(function() {
     	$(achievement).popover('hide')
 		}, 7 * 1000);

@@ -27,7 +27,7 @@ $('#target').click(function() {
 		$('#score').text(score);
 	}
 	if (score == 100) {
-
+		$(achievement).popover('hide')
 		var achievement = '#achievement1'
 
 		$(achievement).popover('show')
@@ -36,7 +36,7 @@ $('#target').click(function() {
 		}, 7 * 1000);
 	}
 		if (score == 200) {
-
+		$(achievement).popover('hide')
 		var achievement = '#achievement2'
 
 		$(achievement).popover('show')
@@ -45,7 +45,7 @@ $('#target').click(function() {
 		}, 7 * 1000);
 	}
 		if (score == 300) {
-
+		$(achievement).popover('hide')
 		var achievement = '#achievement3'
 
 		$(achievement).popover('show')
@@ -54,7 +54,7 @@ $('#target').click(function() {
 		}, 7 * 1000);
 	}
 		if (score == 400) {
-
+		$(achievement).popover('hide')
 		var achievement = '#achievement4'
 
 		$(achievement).popover('show')
@@ -62,8 +62,8 @@ $('#target').click(function() {
     	$(achievement).popover('hide')
 		}, 7 * 1000);
 	}
-		if (score == 1000) {
-
+		if (score == 4000) {
+		$(achievement).popover('hide')
 		var achievement = '#achievement5'
 		score = score = 0
 

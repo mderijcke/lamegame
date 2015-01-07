@@ -5,7 +5,7 @@
 	<title>Click It!</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -49,53 +49,53 @@
 
 	<div role="tabpanel" class="tab-pane fade" id="highscore">
 		<table class="table table-striped">
-			<tr>
+			<tr class="head-table">
 				<th>#</th>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Username</th>
+				<th>Name</th>
+				<th>Score</th>
+				<th>Rank</th>
 			</tr>
 
 			<tr>
 				<td><strong>1</strong></td>
 				<td>Mark</td>
-				<td>Otto</td>
-				<td>@mdo</td>
+				<td>15</td>
+				<td>Gold</td>
 			</tr>
 
 			<tr>
 				<td><strong>2</strong></td>
 				<td>Jacob</td>
-				<td>Thornton</td>
-				<td>@fat</td>
+				<td>12</td>
+				<td>Silver</td>
 			</tr>
 
 			<tr>
 				<td><strong>3</strong></td>
 				<td>Larry</td>
-				<td>the Bird</td>
-				<td>@twitter</td>
+				<td>10</td>
+				<td>Silver</td>
 			</tr>
 
 			<tr>
 				<td><strong>4</strong></td>
 				<td>Harry</td>
-				<td>the Bird</td>
-				<td>@twitter</td>
+				<td>8</td>
+				<td>Bronze</td>
 			</tr>
 
 			<tr>
 				<td><strong>5</strong></td>
 				<td>Hank</td>
-				<td>the Bird</td>
-				<td>@twitter</td>
+				<td>6</td>
+				<td>Bronze</td>
 			</tr>
 
 			<tr>
 				<td><strong>6</strong></td>
 				<td>Tom</td>
-				<td>the Bird</td>
-				<td>@twitter</td>
+				<td>4</td>
+				<td>Bronze</td>
 			</tr>
 		</table>
 	</div>
@@ -105,14 +105,16 @@
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-4">
-					Time left: <span id="countdown">60</span> -
-					Score: <span id="score">0</span>
+					<center>
+						Time left: <span class="badge"><span id="countdown">60</span></span> -
+						Score: <span class="label label-success"><span id="score">0</span></span>
 
-					<br><br>
+						<br><br>
 
-					<button id="start">Start</button>
+						<button id="start">Start</button>
 
-					<img id="target" src="http://i.stack.imgur.com/vfLae.png" style="display: none" draggable="false">
+					<img class="img-responsive" id="target" src="http://i.stack.imgur.com/vfLae.png" style="display: none" draggable="false">
+					<center>
 				</div>
 				<div class="col-md-4"></div>
 			</div>
